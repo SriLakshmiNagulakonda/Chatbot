@@ -1,0 +1,11 @@
+<project name="ant-tutorial" default="ThirdTarget">
+	<target name="FirstTarget">
+		<echo>Executing FirstTarget</echo>
+	</target>
+	<target name="SecondTarget" depends="FirstTarget">
+		<echo>Executing SecondTarget</echo>
+	</target>
+	<target name="ThirdTarget" depends="FirstTarget,SecondTarget">
+		<echo>Executing ThirdTarget</echo>	
+	</target>
+</project>	
